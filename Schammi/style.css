@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #b30000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+.menu-item {
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+
+.price {
+    float: right;
+    color: #ffcc00;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

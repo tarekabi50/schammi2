@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Speisekarte – Pizzeria Schammi</title>
+
+<style>
+
+/* BASIS */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* HEADER */
+header{
+background:#c8102e;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+header h1{
+color:white;
+font-size:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* SECTION */
+.section{
+padding:80px 50px;
+text-align:center;
+background:white;
+}
+
+.section h2{
+font-size:36px;
+color:#c8102e;
+margin-bottom:40px;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card div{
+padding:20px;
+}
+
+.card h3{
+color:#c8102e;
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:15px;
+}
+
+.card a{
+display:inline-block;
+background:#c8102e;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+text-decoration:none;
+}
+
+.card a:hover{
+background:#a00a23;
+}
+
+/* FOOTER */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Pizzeria Schammi</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="speisekarte.html">Speisekarte</a>
+<a href="oeffnungszeiten.html">&Ouml;ffnungszeiten</a>
+<a href="kontakt.html">Kontakt</a>
+<a href="lieferservice.html">Lieferservice</a>
+<a href="partyservice.html">Partyservice</a>
+</nav>
+</header>
+
+<section class="section">
+<h2>Unsere Speisekarte</h2>
+
+<div class="cards">
+
+<!-- PIZZA -->
+<div class="card">
+<img src="Hauptpizza.png">
+<div>
+<h3>Pizzen</h3>
+<p>Leckere, frisch gebackene Pizza.</p>
+<a href="Speisekarte/pizzen.html">Ansehen</a>
+</div>
+</div>
+
+<!-- DÖNERSPIEß -->
+<div class="card">
+<img src="Döner.png">
+<div>
+<h3>Dönergerichte</h3>
+<p>Echter Dönerspieß, Dürüm, Tellergerichte.</p>
+<a href="Speisekarte/döner.html">Ansehen</a>
+</div>
+</div>
+
+<!-- JÄGERSCHNITZEL -->
+<div class="card">
+<img src="Schnitzel.png">
+<div>
+<h3>Schnitzelgerichte</h3>
+<p>Jägerschnitzel, Rahmschnitzel und mehr.</p>
+<a href="Speisekarte/schnitzel.html">Ansehen</a>
+</div>
+</div>
+
+<!-- SALATE -->
+<div class="card">
+<img src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg">
+<div>
+<h3>Salate</h3>
+<p>Frische, knackige Salate.</p>
+<a href="Speisekarte/salate.html">Ansehen</a>
+</div>
+</div>
+
+<!-- IMBISS (POMMES + NUGGETS) -->
+<div class="card">
+<img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg">
+<div>
+<h3>Imbiss</h3>
+<p>Pommes, Nuggets, Currywurst.</p>
+<a href="Speisekarte/imbiss.html">Ansehen</a>
+</div>
+</div>
+
+<!-- PASTA -->
+<div class="card">
+<img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg">
+<div>
+<h3>Pasta</h3>
+<p>Carbonara, Bolognese, Arrabiata.</p>
+<a href="Speisekarte/pasta.html">Ansehen</a>
+</div>
+</div>
+
+<!-- DIPS (AIOLI + KRÄUTERBUTTER) -->
+<div class="card">
+<img src="Dips.png">
+<div>
+<h3>Dips & Feinkost</h3>
+<p>Aioli, Kräuterbutter, Tzatziki.</p>
+<a href="Speisekarte/dips.html">Ansehen</a>
+</div>
+</div>
+
+<!-- GETRÄNKE (COLA, FANTA, SPRITE) -->
+<div class="card">
+<img src="Getränke.png">
+<div>
+<h3>Getränke</h3>
+<p>Cola, Fanta, Sprite & mehr.</p>
+<a href="Speisekarte/getraenke.html">Ansehen</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Pizzeria Schammi | Website von Tarek Aanan
+</footer>
+
+</body>
+</html>

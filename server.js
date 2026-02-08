@@ -23,7 +23,7 @@ app.post("/chat", async (req, res) => {
         "Authorization": `Bearer ${GROQ_KEY}`
       },
       body: JSON.stringify({
-        model: "llama3-8b-8192",
+        model: "llama-3.1-8b-instant",
         messages: [
           {
             role: "system",
@@ -57,5 +57,3 @@ app.post("/chat", async (req, res) => {
 app.listen(3000, () => {
   console.log("✅ KI-Server läuft auf http://localhost:3000");
 });
-
-

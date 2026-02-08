@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const GROQ_KEY = process.env.GROQ_KEY;
+const GROQ_KEY = process.env.KEY;
 console.log("KEY:", GROQ_KEY);
 
 app.post("/chat", async (req, res) => {
@@ -57,3 +57,4 @@ app.post("/chat", async (req, res) => {
 app.listen(3000, () => {
   console.log("✅ KI-Server läuft auf http://localhost:3000");
 });
+

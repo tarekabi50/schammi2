@@ -9,6 +9,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static(__dirname));
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
+
 const GROQ_KEY = process.env.KEY;
 console.log("KEY:", GROQ_KEY);
 
@@ -145,3 +152,4 @@ Wenn der Nutzer etwas fragt, das nicht in diesen Informationen enthalten ist, an
 app.listen(3000, () => {
   console.log("✅ KI-Server läuft auf http://localhost:3000");
 });
+
